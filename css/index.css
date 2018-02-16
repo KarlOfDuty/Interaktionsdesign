@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     float: left;
     border: 1px dotted black;
+    font-size: 50px;
     color:white;
 }
 .characterList {
@@ -43,11 +44,14 @@ body {
         width: 100%;
         border-bottom:  3px white;
     }
-.menuitem a {
+a {
+    font-size: 20px;
     color: white;
     float:left;
+    margin:0;
+    margin-right:5px;
 }
-    .menuitem a:hover {
+    a:hover {
         transition-timing-function: ease-in;
         transition-duration: 0.2s;
         border-bottom: 5px white;
