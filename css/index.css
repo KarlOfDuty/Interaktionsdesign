@@ -4,24 +4,41 @@ body {
     padding: 0;
     margin: 0;
     background-color: #222222;
-    background-image: url("../images/back.jpg");
+    //background-image: url("../images/back.jpg");
     float: left;
     position: absolute;
     display: block;
-    overflow-y:hidden;
+    overflow:hidden;
+    background-color:#515151;
 }
 .header {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: black;
     margin: 0;
     padding: 0;
+    padding-top:20px;
     box-sizing: border-box;
     float: left;
     border: 1px dotted black;
     font-size: 50px;
     color:white;
 }
+    .header a {
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        margin-right: 5px;
+        text-decoration: none;
+        text-shadow: 0 0 10px #fff;
+    }
+        .header a:hover {
+            transition-timing-function: ease-in;
+            transition-duration: 0.2s;
+            margin-left: 5px;
+            margin-right: 0px;
+            border-bottom: 5px white;
+        }
 .characterList {
     height: 900px;
     width: 300px;
@@ -29,30 +46,88 @@ body {
     padding: 0;
     box-sizing: border-box;
     border-right: 1px dotted black;
+    background-color: #cacaca;
     position: relative;
     float: left;
 }
-.characterListItem {
-    height: 50px;
-    width: 100%;
-    list-style-type: none;
-}
-    .characterListItem:hover {
-        transition-timing-function:ease-in;
+    .characterList a {
+        height: 50px;
+        width: 100%;
+        display: block;
+        list-style-type: none;
+        border-bottom: 1px black solid;
+        text-decoration: none;
+        font-size:25px;
+        text-align:center;
+    }
+    .characterList a:hover {
+        transition-timing-function: ease-in;
         transition-duration: 0.2s;
         height: 50px;
         width: 100%;
-        border-bottom:  3px white;
+        border-bottom: 1px white;
     }
-a {
-    font-size: 20px;
-    color: white;
-    float:left;
-    margin:0;
-    margin-right:5px;
+    .characterList a:visited {
+        color:black;
+    }
+
+.characterPreview {
+    float: left;
+    border: dotted black 1px;
+    box-sizing: border-box;
+    margin-left: 400px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-    a:hover {
-        transition-timing-function: ease-in;
-        transition-duration: 0.2s;
-        border-bottom: 5px white;
+    .characterPreview .weaponBox {
+        width: 100px;
+        height: 230px;
+        border: double 10px black;
+        box-sizing: border-box;
+        background-color: #cacaca;
+        margin-top: 30px;
+        padding:0;
+        position:relative;
+    }
+        .characterPreview .weaponBox .attachments {
+            width:25px;
+            height:100px;
+            margin:0;
+            padding:0;
+            top:0px;
+            left:50px;
+            position:absolute;
+        }
+            .characterPreview .weaponBox .attachments .attachmentBox {
+                width: 25px;
+                height: 25px;
+                border: solid 3px black;
+                box-sizing: border-box;
+                background-color: #cacaca;
+                margin-top: 5px;
+                z-index: 50;
+            }
+    .characterPreview .equipmentBox {
+        width: 100px;
+        height: 100px;
+        border: double 10px black;
+        box-sizing: border-box;
+        background-color:#cacaca;
+        margin-top:30px;
+    }
+    .characterPreview .characterModel {
+        width: 500px;
+        height: 700px;
+        border: double 10px black;
+        box-sizing: border-box;
+        margin: -50px 20px 0px 20px;
+        float: left;
+    }
+    .characterPreview img {
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index:1;
     }
