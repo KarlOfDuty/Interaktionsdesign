@@ -124,7 +124,8 @@ body {
     }
 
 .characterPreview {
-    float: left;
+  width: 100%;
+    float: right;
     border: dotted black 1px;
     box-sizing: border-box;
     margin-left: 400px;
@@ -182,4 +183,49 @@ body {
         margin-left: auto;
         margin-right: auto;
         z-index:1;
+    }
+
+    .continer {
+       display: inline-block;
+    }
+
+    .itameList {
+      height: 500px;
+        width: 400px;
+        float: left;
+        border: dotted black 1px;
+        box-sizing: border-box;
+    }
+
+    .weaponList {
+
+    }
+
+    .weaponItem {
+      height: 100px;
+      width: 400px;
+        float: left;
+        border: dotted black 1px;
+        box-sizing: border-box;
+    }
+    .weaponItem a {
+      height: 100%;
+        display: block;
+        list-style-type: none;
+        border-bottom: 1px black solid;
+        text-decoration: none;
+        font-size:25px;
+    color: #808080;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    }
+    .weaponItem img {
+        height: 200%;
+        float: left;
+        display: block;
+        margin-left: 100px;
+        margin-top: -45px;
     }
