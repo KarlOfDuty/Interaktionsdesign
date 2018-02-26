@@ -79,11 +79,17 @@ body {
     }
 	.optionsmenu img{
 		content: url("https://karlofduty.github.io/images/gear.png");
-		height: 40px;
-		width: 40px;
 	}
 	.optionsmenu:hover img{
 		content: url("https://karlofduty.github.io/images/gearGrey.png");
+    }
+	.optionsmenu:active{
+		content: url("https://karlofduty.github.io/images/gearGrey.png");
+		height: 40px;
+		width: 40px;
+		position: relative;
+		float: right;
+		margin-top: 7px;
     }
 .characterList {
     height: 900px;
