@@ -74,11 +74,21 @@ body {
 			-1px 1px 0 #000,
 			1px 1px 0 #000;
         }
+	.optionsmenu{
+        float: right;
+		position: relative;
+    }
+	.optionsmenu img{
+		content: url("https://karlofduty.github.io/images/gear.png");
+		height: 40px;
+		width: 40px;
+	}
+	.optionsmenu:hover img{
+		content: url("https://karlofduty.github.io/images/gearGrey.png");
+    }
 .characterList {
     height: 900px;
     width: 300px;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     border-right: 1px dotted black;
     background-color: #cacaca;
@@ -86,14 +96,15 @@ body {
     float: left;
 }
     .characterList a {
+		padding-top: 15px;
         height: 50px;
         width: 100%;
         display: block;
-        list-style-type: none;
+		vertical-align: bottom;
         border-bottom: 1px black solid;
         text-decoration: none;
         font-size:25px;
-        text-align:center;
+        text-align: center;
 		color: #808080;
 		text-shadow:
 		-1px -1px 0 #000,
@@ -199,6 +210,11 @@ body {
 #weaponList {
     display: none;
 }
+
+#attachmentsList {
+  
+}
+
 .listItem {
     width: 100%;
     height: 100px;
