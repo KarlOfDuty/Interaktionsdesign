@@ -4,7 +4,6 @@ body {
     padding: 0;
     margin: 0;
     background-color: #222222;
-    //background-image: url("../images/back.jpg");
     float: left;
     position: absolute;
     display: block;
@@ -212,7 +211,7 @@ body {
 }
 
 #attachmentsList {
-  
+    display: none;
 }
 
 .listItem {
