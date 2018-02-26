@@ -245,6 +245,12 @@ body {
     box-sizing: border-box;
 }
 
+.bio {
+	padding-top: 20px;
+	font-size:20px;
+	box-sizing: border-box;
+}
+
 #weaponList {
 
 }
