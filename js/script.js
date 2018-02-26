@@ -21,6 +21,5 @@ function clearEquipmentMenu()
 
 function loadCharacter()
 {
-  document.getElementById("demo").innerHTML = 5 + 6;
-    document.getElementById("loade").innerHTML='<object type="text/html" data="home.html" ></object>';
+    document.getElementById("loade").innerHTML='<object type="text/html" data="ash.html" ></object>';
 }
