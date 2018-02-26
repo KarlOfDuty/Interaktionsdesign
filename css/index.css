@@ -187,28 +187,30 @@ body {
        display: inline-block;
     }
 
-.itemList {
+#itemList {
     height: 870px;
     width: 670px;
     float: left;
     box-sizing: border-box;
+    border-right: 1px black solid;
+    overflow-y:hidden;
 }
 
 #weaponList {
-
+    display: none;
 }
 .listItem {
+    width: 100%;
     height: 100px;
-    width: 400px;
     float: left;
-    border: dotted black 1px;
     box-sizing: border-box;
+    border-bottom: 1px black solid;
+    background-color:#a7a7a7;
 }
     .listItem a {
         height: 100%;
         display: block;
         list-style-type: none;
-        border-bottom: 1px black solid;
         text-decoration: none;
         font-size: 25px;
         color: #808080;

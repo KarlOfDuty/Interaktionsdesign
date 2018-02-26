@@ -3,7 +3,7 @@
 <head>
     <title>Menu Redesign</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -20,34 +20,89 @@
         <a href="">Jäger</a>
     </div>
 <div class="container">
-    <div class="itemList">
-      <div id="weaponList">
-        <div class="listItem">
-          <a href="http://google.com">
-              <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);"/>
-          </a>
+    <div id="itemList">
+        <div id="weaponList">
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
+            <div class="listItem">
+                <a href="http://google.com">
+                    <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
+                </a>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="characterPreview">
         <div style="float:left;">
             <div class="weaponBox">
                 <a href="#">
-                    <img src="images/weapon1.png" alt="Weapon" />
+                    <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList')"/>
                 </a>
                 <div class="attachments">
                     <a href="#">
-                        <div class="attachmentBox"></div>
+                        <div id="attachmentBox1" class="attachmentBox"></div>
+                    </a>                         
+                    <a href="#">                 
+                        <div id="attachmentBox2" class="attachmentBox"></div>
+                    </a>                         
+                    <a href="#">                 
+                        <div id="attachmentBox3" class="attachmentBox"></div>
                     </a>
                     <a href="#">
-                        <div class="attachmentBox"></div>
-                    </a>
-                    <a href="#">
-                        <div class="attachmentBox"></div>
-                    </a>
-                    <a href="#">
-                        <div class="attachmentBox"></div>
+                        <div id="attachmentBox4" class="attachmentBox"></div>
                     </a>
                 </div>
             </div>
