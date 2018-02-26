@@ -101,6 +101,40 @@ body {
     position: relative;
     float: left;
 }
+	.atk{
+		padding-top: 15px;
+        height: 40px;
+        width: 100%;
+        display: block;
+		vertical-align: bottom;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size:25px;
+        text-align: center;
+		color: white;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	}
+	.def{
+		padding-top: 200px;
+        height: 40px;
+        width: 100%;
+        display: block;
+		vertical-align: bottom;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size:25px;
+        text-align: center;
+		color: white;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	}
     .characterList a {
 		padding-top: 15px;
         height: 50px;
