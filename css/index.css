@@ -126,7 +126,7 @@ body {
 .characterPreview {
     float: left;
     box-sizing: border-box;
-    margin-left: 670px;
+    margin-left: 0px;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -183,44 +183,38 @@ body {
         z-index:1;
     }
 
-    .continer {
+    .container {
        display: inline-block;
     }
 
-    .itameList {
-      height: 500px;
-        width: 400px;
-        float: left;
-        border: dotted black 1px;
-        box-sizing: border-box;
-    }
+.itemList {
+    height: 870px;
+    width: 670px;
+    float: left;
+    box-sizing: border-box;
+}
 
-    .weaponList {
+#weaponList {
 
-    }
-
-    .weaponItem {
-      height: 100px;
-      width: 400px;
-        float: left;
-        border: dotted black 1px;
-        box-sizing: border-box;
-    }
-    .weaponItem a {
-      height: 100%;
+}
+.listItem {
+    height: 100px;
+    width: 400px;
+    float: left;
+    border: dotted black 1px;
+    box-sizing: border-box;
+}
+    .listItem a {
+        height: 100%;
         display: block;
         list-style-type: none;
         border-bottom: 1px black solid;
         text-decoration: none;
-        font-size:25px;
-    color: #808080;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+        font-size: 25px;
+        color: #808080;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-    .weaponItem img {
+    .listItem img {
         height: 200%;
         float: left;
         display: block;
