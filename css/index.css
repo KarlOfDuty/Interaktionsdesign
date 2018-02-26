@@ -77,14 +77,16 @@ body {
         float: right;
 		position: relative;
     }
-	.optionsmenu img{
-		content: url("https://karlofduty.github.io/images/gear.png");
-	}
-	.optionsmenu:hover img{
-		content: url("https://karlofduty.github.io/images/gearGrey.png");
-    }
+        .optionsmenu img {
+            content: url("../images/gear.png");
+        }
+        .optionsmenu:hover img {
+            transition-timing-function: ease-in;
+            transition-duration: 1s;
+            content: url("../images/gearGrey.png");
+        }
 	.optionsmenu:active{
-		content: url("https://karlofduty.github.io/images/gearGrey.png");
+		content: url("../images/gearGrey.png");
 		height: 40px;
 		width: 40px;
 		position: relative;
