@@ -8,7 +8,7 @@ function openEquipmentMenu(list, id) {
         document.getElementById("itemList").style["overflow-y"] = "hidden";
     }
 
-    if (currentList != list) {
+    if (currentBox != id) {
         document.getElementById(list).style.display = "block";
         document.getElementById("itemList").style["overflow-y"] = "auto";
         currentList = list;
@@ -29,13 +29,13 @@ function clearEquipmentMenu() {
 
 function loadCharacter(id) {
     if (id == "ash") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="ash.html" ></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="ash.html" ></object>';
     } else if (id == "fuze") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Fuze.html"></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Fuze.html"></object>';
     } else if (id == "rook") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Rook.html"></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Rook.html"></object>';
     } else if (id == "jeger") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Jeger.html"></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Jeger.html"></object>';
     }
 }
 
