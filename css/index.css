@@ -174,6 +174,41 @@ body {
 		    -1px 1px 0 #000,
 		    1px 1px 0 #000;
         }
+.characterBox {
+    display: block;
+    background-color: #b0b0b0;
+    border-bottom: 1px dotted black;
+    height: 50px;
+    width: 100%;
+}
+
+    .characterBox:hover {
+        transition: .25s;
+        background-color: #dcdcdc;
+    }
+
+.characterBoxImage {
+    height: 50px;
+    width: 50px;
+    margin-left: 2px;
+    float: left;
+}
+
+    .characterBoxImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+.characterBoxText {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 25px;
+    float: left;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .characterPreview {
     float: left;
