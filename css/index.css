@@ -9,6 +9,7 @@ body {
     display: block;
     overflow: hidden;
     background-color: #515151;
+    -webkit-font-smoothing: antialiased;
 }
 
 .header {
@@ -113,104 +114,96 @@ body {
     height: 900px;
     width: 300px;
     box-sizing: border-box;
-    border-right: 1px dotted black;
+    border-right: 1px solid black;
     background-color: #cacaca;
     position: relative;
     float: left;
 }
 
-.atk {
-    padding-top: 15px;
-    height: 40px;
-    width: 100%;
-    display: block;
-    vertical-align: bottom;
-    border-bottom: 2px black solid;
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.def {
-    padding-top: 200px;
-    height: 40px;
-    width: 100%;
-    display: block;
-    vertical-align: bottom;
-    border-bottom: 2px black solid;
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.characterList a {
-    //padding-top: 15px;
-    height: 50px;
-    width: 100%;
-    display: block;
-    vertical-align: bottom;
-    border-bottom: 1px black solid;
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    color: #808080;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-    .characterList a:hover {
-        transition-timing-function: ease-in;
-        transition-duration: 0.2s;
-        height: 50px;
+    .characterList .atk {
+        padding-top: 15px;
+        height: 40px;
         width: 100%;
-        border-bottom: 1px white;
-        color: #FFFFFF;
+        display: block;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: center;
+        color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
-    .characterList a:visited {
+    .characterList .def {
+        padding-top: 200px;
+        height: 40px;
+        width: 100%;
+        display: block;
+        vertical-align: bottom;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .characterList a {
+        display: block;
+        text-decoration: none;
         color: #808080;
+    }
+
+        .characterList a:hover {
+            transition: ease-in 0.2s;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .characterList a:visited {
+            color: #808080;
+            text-decoration: none;
+        }
+
+    .characterList .characterBox {
+        border-bottom: 1px black solid;
+        box-sizing: border-box;
+        padding: 1px;
+        display: block;
+        background-color: #b0b0b0;
+        height: 52px;
+        width: 100%;
+        font-size: 25px;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
-.characterBox {
-    display: block;
-    background-color: #b0b0b0;
-    border-bottom: 1px solid black;
-    height: 50px;
-    width: 100%;
-}
+        .characterList .characterBox:hover {
+            transition: .25s;
+            background-color: #dcdcdc;
+            border-bottom: 1px white;
+        }
 
-    .characterBox:hover {
-        transition: .25s;
-        background-color: #dcdcdc;
-    }
+        .characterList .characterBox .characterBoxImage {
+            height: 50px;
+            width: 50px;
+            margin-left: 2px;
+            float: left;
+        }
 
-.characterBoxImage {
-    height: 50px;
-    width: 50px;
-    margin-left: 2px;
-    float: left;
-}
+            .characterList .characterBox .characterBoxImage img {
+                width: 100%;
+                height: 100%;
+            }
 
-    .characterBoxImage img {
-        width: 100%;
-        height: 100%;
-    }
-
-.characterBoxText {
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 25px;
-    float: left;
-    vertical-align: middle;
-    line-height: 50px;
-    margin-left: 10px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+        .characterList .characterBox .characterBoxText {
+            display: inline-block;
+            color: #FFFFFF;
+            font-size: 25px;
+            float: left;
+            vertical-align: middle;
+            line-height: 50px;
+            margin-left: 10px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
 
 .characterPreview {
     float: left;
