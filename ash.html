@@ -9,27 +9,27 @@
         <div id="itemList">
             <div id="attachmentsList">
                 <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/Attachments/acog1.png" alt="attachment1" />
                     </a>
                 </div>
             </div>
             <div id="weaponList">
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                    <a href="#">
+                        <img src="images/weapon1rot.png" alt="Weapon" onclick="selectItem('m4')" />
                     </a>
                 </div>
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/akrot.png" alt="Weapon" />
+                    <a href="#">
+                        <img src="images/akrot.png" alt="Weapon" onclick="selectItem('ak')" />
                     </a>
                 </div><div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1rot.png" alt="Weapon" />
                     </a>
                 </div>                <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1rot.png" alt="Weapon" />
                     </a>
                 </div>
@@ -58,7 +58,7 @@
             <div id="hatList">
                 <div class="listItem">
                     <a href="http://google.com">
-                        <img src="images/weapon1.png" alt="hat"/>
+                        <img src="images/weapon1.png" alt="hat" />
                     </a>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             <div style="float:left;">
                 <div class="weaponBox">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList')" />
+                        <img src="images/weapon1.png" alt="Weapon" id="weaponBox" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
                     </a>
                     <div class="attachments">
                         <a href="#">
@@ -94,7 +94,7 @@
                 <div class="equipmentBox"><a href="#"></a></div>
                 <div class="equipmentBox"><a href="#"></a></div>
                 <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
+                <!--<div class="equipmentBox"><a href="#"></a></div>-->
             </div>
         </div>
     </div>
