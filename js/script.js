@@ -43,10 +43,11 @@ function selectItem(id) {
     if (currentBox == "") {
     }
     else if (id == "m4") {
-        document.getElementById(currentBox).src = "../images/weapon1rot.png";
+        document.getElementById(currentBox).src = "images/weapon1.png";
     }
     else if (id == "ak") {
-        document.getElementById(currentBox).src = "../images/akrot.png";
+        document.getElementById(currentBox).src = "images/ak.png";
     }
+    clearEquipmentMenu();
     return;
 }

@@ -17,12 +17,12 @@
             <div id="weaponList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                        <img src="images/weapon1rot.png" alt="Weapon" onclick="selectItem('m4')" />
                     </a>
                 </div>
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/akrot.png" alt="Weapon" />
+                        <img src="images/akrot.png" alt="Weapon" onclick="selectItem('ak')" />
                     </a>
                 </div><div class="listItem">
                     <a href="#">
@@ -58,7 +58,7 @@
             <div id="hatList">
                 <div class="listItem">
                     <a href="http://google.com">
-                        <img src="images/weapon1.png" alt="hat"/>
+                        <img src="images/weapon1.png" alt="hat" />
                     </a>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             <div style="float:left;">
                 <div class="weaponBox">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
+                        <img src="images/weapon1.png" alt="Weapon" id="weaponBox" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
                     </a>
                     <div class="attachments">
                         <a href="#">
