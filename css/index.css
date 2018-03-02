@@ -1,98 +1,92 @@
 body {
-    width:100%;
-    height:1000px;
+    width: 100%;
+    height: 1000px;
     padding: 0;
     margin: 0;
     background-color: #222222;
     float: left;
     position: absolute;
     display: block;
-    overflow:hidden;
-    background-color:#515151;
+    overflow: hidden;
+    background-color: #515151;
 }
+
 .header {
     width: 100%;
     height: 80px;
     background-color: black;
     margin: 0;
     padding: 0;
-    padding-top:20px;
+    padding-top: 20px;
     box-sizing: border-box;
     float: left;
     border: 1px dotted black;
     font-size: 50px;
-    color:white;
+    color: white;
 }
-    .mainmenu{
-        font-size: 40px;
-        color: #808080;
-		text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-        margin: 0;
-        margin-right: 5px;
-        text-decoration: none;
+
+.mainmenu {
+    font-size: 40px;
+    color: #808080;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+    .mainmenu:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+        margin-left: 5px;
+        margin-right: 0px;
+        border-bottom: 5px white;
+        color: #FFFFFF;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-	        .mainmenu:hover {
-            transition-timing-function: ease-in;
-            transition-duration: 0.2s;
-            margin-left: 5px;
-            margin-right: 0px;
-            border-bottom: 5px white;
-			color: #FFFFFF;
-			text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-        }
-    .menuitem{
-        font-size: 20px;
-        color: #808080;
-		text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-        margin: 0;
-        margin-right: 5px;
-        text-decoration: none;
+
+.menuitem {
+    font-size: 20px;
+    color: #808080;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+    .menuitem:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+        margin-left: 5px;
+        margin-right: 0px;
+        border-bottom: 5px white;
+        color: #FFFFFF;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-        .menuitem:hover {
-            transition-timing-function: ease-in;
-            transition-duration: 0.2s;
-            margin-left: 5px;
-            margin-right: 0px;
-            border-bottom: 5px white;
-			color: #FFFFFF;
-			text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-        }
-	.optionsmenu{
+
+.optionsmenu {
+    float: right;
+    position: relative;
+}
+
+    .optionsmenu img {
+        content: url("../images/gear.png");
+    }
+
+    .optionsmenu:hover img {
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        content: url("../images/gearGrey.png");
+    }
+
+    .optionsmenu:active {
+        content: url("../images/gearGrey.png");
+        height: 40px;
+        width: 40px;
+        position: relative;
         float: right;
-		position: relative;
+        margin-top: 7px;
     }
-        .optionsmenu img {
-            content: url("../images/gear.png");
-        }
-        .optionsmenu:hover img {
-            transition-timing-function: ease-in;
-            transition-duration: 1s;
-            content: url("../images/gearGrey.png");
-        }
-	.optionsmenu:active{
-		content: url("../images/gearGrey.png");
-		height: 40px;
-		width: 40px;
-		position: relative;
-		float: right;
-		margin-top: 7px;
-    }
+
 .characterList {
     height: 900px;
     width: 300px;
@@ -102,82 +96,68 @@ body {
     position: relative;
     float: left;
 }
-	.atk{
-		padding-top: 15px;
-        height: 40px;
-        width: 100%;
-        display: block;
-		vertical-align: bottom;
-        border-bottom: 2px black solid;
-        text-decoration: none;
-        font-size:25px;
-        text-align: center;
-		color: white;
-		text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-	}
-	.def{
-		padding-top: 200px;
-        height: 40px;
-        width: 100%;
-        display: block;
-		vertical-align: bottom;
-        border-bottom: 2px black solid;
-        text-decoration: none;
-        font-size:25px;
-        text-align: center;
-		color: white;
-		text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-	}
-    .characterList a {
-		padding-top: 15px;
+
+.atk {
+    padding-top: 15px;
+    height: 40px;
+    width: 100%;
+    display: block;
+    vertical-align: bottom;
+    border-bottom: 2px black solid;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.def {
+    padding-top: 200px;
+    height: 40px;
+    width: 100%;
+    display: block;
+    vertical-align: bottom;
+    border-bottom: 2px black solid;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.characterList a {
+    //padding-top: 15px;
+    height: 50px;
+    width: 100%;
+    display: block;
+    vertical-align: bottom;
+    border-bottom: 1px black solid;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: #808080;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+    .characterList a:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
         height: 50px;
         width: 100%;
-        display: block;
-		vertical-align: bottom;
-        border-bottom: 1px black solid;
-        text-decoration: none;
-        font-size:25px;
-        text-align: center;
-		color: #808080;
-		text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+        border-bottom: 1px white;
+        color: #FFFFFF;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-        .characterList a:hover {
-            transition-timing-function: ease-in;
-            transition-duration: 0.2s;
-            height: 50px;
-            width: 100%;
-            border-bottom: 1px white;
-		    color: #FFFFFF;
-		    text-shadow:
-		    -1px -1px 0 #000,
-		    1px -1px 0 #000,
-		    -1px 1px 0 #000,
-		    1px 1px 0 #000;
-        }
-        .characterList a:visited {
-            color: #808080;
-		    text-shadow:
-		    -1px -1px 0 #000,
-		    1px -1px 0 #000,
-		    -1px 1px 0 #000,
-		    1px 1px 0 #000;
-        }
+
+    .characterList a:visited {
+        color: #808080;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
 .characterBox {
     display: block;
     background-color: #b0b0b0;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid black;
     height: 50px;
     width: 100%;
 }
@@ -218,6 +198,7 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 }
+
     .characterPreview .weaponBox {
         width: 100px;
         height: 230px;
@@ -225,20 +206,22 @@ body {
         box-sizing: border-box;
         background-color: #cacaca;
         margin-top: 30px;
-        padding:0;
-        position:relative;
+        padding: 0;
+        position: relative;
     }
+
         .characterPreview .weaponBox .attachments {
-            width:25px;
-            height:100px;
-            margin:0;    
+            width: 25px;
+            height: 100px;
+            margin: 0;
             height: 100px;
             width: 400px;
-            padding:0;
-            top:0px;
-            left:50px;
-            position:absolute;
+            padding: 0;
+            top: 0px;
+            left: 50px;
+            position: absolute;
         }
+
             .characterPreview .weaponBox .attachments .attachmentBox {
                 width: 25px;
                 height: 25px;
@@ -248,14 +231,16 @@ body {
                 margin-top: 5px;
                 z-index: 50;
             }
+
     .characterPreview .equipmentBox {
         width: 100px;
         height: 100px;
         border: double 10px black;
         box-sizing: border-box;
-        background-color:#cacaca;
-        margin-top:30px;
+        background-color: #cacaca;
+        margin-top: 30px;
     }
+
     .characterPreview .characterModel {
         width: 500px;
         height: 700px;
@@ -264,17 +249,18 @@ body {
         margin: -50px 20px 0px 20px;
         float: left;
     }
+
     .characterPreview img {
         height: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        z-index:1;
+        z-index: 1;
     }
 
-    .container {
-       display: inline-block;
-    }
+.container {
+    display: inline-block;
+}
 
 #itemList {
     height: 870px;
@@ -282,7 +268,7 @@ body {
     float: left;
     box-sizing: border-box;
     border-right: 1px black solid;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
 #weaponList {
@@ -299,8 +285,9 @@ body {
     float: left;
     box-sizing: border-box;
     border-bottom: 1px black solid;
-    background-color:#a7a7a7;
+    background-color: #a7a7a7;
 }
+
     .listItem a {
         height: 100%;
         display: block;
@@ -310,6 +297,7 @@ body {
         color: #808080;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
+
     .listItem img {
         height: 200%;
         float: left;
@@ -319,6 +307,6 @@ body {
     }
 
 #loade {
-  height: 800px;
-  width: 800px;
+    height: 800px;
+    width: 800px;
 }
