@@ -68,7 +68,7 @@ html {
         color: #FFFFFF;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-	
+
 	.optionsmenu{
         float: right;
 		padding-right: 20px;
@@ -85,7 +85,7 @@ html {
         transition-duration: 1s;
         content: url("../images/gearGrey.png");
     }
-	
+
     .optionsmenu:active {
         content: url("../images/gearGrey.png");
         height: 40px;
@@ -94,7 +94,7 @@ html {
         float: right;
         margin-top: 7px;
     }
-	
+
 		.exit{
         float: right;
 		padding-right: 20px;
@@ -332,6 +332,14 @@ html {
 }
 
 #equipmentList {
+  display: none;
+}
+
+#amortList {
+  display: none;
+}
+
+#hatList {
   display: none;
 }
 
