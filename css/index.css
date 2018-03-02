@@ -76,6 +76,7 @@ body {
         }
 	.optionsmenu{
         float: right;
+		padding-right: 20px;
 		position: relative;
     }
 	.optionsmenu img{
@@ -86,6 +87,25 @@ body {
     }
 	.optionsmenu:active{
 		content: url("https://karlofduty.github.io/images/gearGrey.png");
+		height: 40px;
+		width: 40px;
+		position: relative;
+		float: right;
+		margin-top: 7px;
+    }
+	.exit{
+        float: right;
+		padding-right: 20px;
+		position: relative;
+    }
+	.exit img{
+		content: url("https://karlofduty.github.io/images/exit.png");
+	}
+	.exit:hover img{
+		content: url("https://karlofduty.github.io/images/exitGrey.png");
+    }
+	.exit:active{
+		content: url("https://karlofduty.github.io/images/exitGrey.png");
 		height: 40px;
 		width: 40px;
 		position: relative;
