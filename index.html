@@ -7,61 +7,40 @@
 </head>
 <body>
     <div class="header">
-        <a class="mainmenu" href="">Rainbow Six Siege</a>
-        <a class="menuitem" href="">Play</a>
-        <a class="menuitem" href="">Operators</a>
-        <a class="menuitem" href="">Shop</a>
-        <a class="menuitem" href="">Social</a>
-        <a class="optionsmenu" href=""><img id="gear" src="images/gear.png" height="40" width="40" /></a>
+        <a class="mainmenu" href="#">Rainbow Six Siege</a>
+        <a class="menuitem" href="#">Play</a>
+        <a class="menuitem" href="#">Operators</a>
+        <a class="menuitem" href="#">Shop</a>
+        <a class="menuitem" href="#">Social</a>
+		<a class="exit" href="#"><img id="exit" src="images/exit.png" height="40px" width="40px"/></a>
+		<a class="optionsmenu" href="http://google.com"><img id="gear" src="images/gear.png" height="40px" width="40px"/></a>
     </div>
 
     <div class="characterList">
-        <div class="atk">Attackers</div>
-        <a href="">
-            <div class="characterBox">
-                <div class="characterBoxImage"><img src="images/OpIcons/ash.png" /></div>
+	   <div class="atk">Attackers</div>
+            <a class ="characterBox" onclick="loadCharacter('ash')">
+                <div class="characterBoxImage"><img src="images/OpIcons/ash.png"/></div>
                 <div class="characterBoxText">Ash</div>
-            </div>
-        </a>
-        <a href="">
-            <div class="characterBox">
-                <div class="characterBoxImage"><img src="images/OpIcons/Fuze.png" /></div>
+            </a>
+            <a ><div class="characterBox" onclick="loadCharacter('fuze')">
+                <div class="characterBoxImage"><img src="images/OpIcons/Fuze.png"/></div>
                 <div class="characterBoxText">Fuze</div>
-            </div>
-        </a>
-        <div class="def">Defenders</div>
-        <a href="">
-            <div class="characterBox">
-                <div class="characterBoxImage"><img src="images/OpIcons/rook.png" /></div>
+            </div></a>
+	   <div class="def">Defenders</div>
+        	<a ><div class="characterBox" onclick="loadCharacter('rook')">
+                <div class="characterBoxImage"><img src="images/OpIcons/rook.png" style="height: 100%;"/></div>
                 <div class="characterBoxText">Rook</div>
-            </div>
-        </a>
-        <a href="">
-            <div class="characterBox">
-                <div class="characterBoxImage"><img src="images/OpIcons/jager.png" /></div>
+            </div></a>
+        	<a ><div class="characterBox" onclick="loadCharacter('jager')">
+                <div class="characterBoxImage"><img src="images/OpIcons/jager.png"/></div>
                 <div class="characterBoxText">Jäger</div>
             </div>
         </a>
     </div>
-    <div class="container">
-        <div id="itemList">
-            <div id="attachmentsList">
-                <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/Attachments/acog1.png" alt="attachment1" />
-                    </a>
-                </div>
-            </div>
-            <div id="weaponList">
-                <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/weapon1.png" alt="Weapon" style="transform: rotate(90deg);" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="loade">
-        </div>
+
+    <div id="loade">
+
     </div>
+
 </body>
 </html>
