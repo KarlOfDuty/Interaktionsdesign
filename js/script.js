@@ -29,3 +29,8 @@ function clearEquipmentMenu()
     document.getElementById("itemList").style["overflow-y"] = "hidden";
     currentBoi = "";
 }
+
+function loadCharacter()
+{
+    document.getElementById("loade").innerHTML='<object type="text/html" data="ash.html" ></object>';
+}

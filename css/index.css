@@ -102,6 +102,40 @@ body {
     position: relative;
     float: left;
 }
+	.atk{
+		padding-top: 15px;
+        height: 40px;
+        width: 100%;
+        display: block;
+		vertical-align: bottom;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size:25px;
+        text-align: center;
+		color: white;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	}
+	.def{
+		padding-top: 200px;
+        height: 40px;
+        width: 100%;
+        display: block;
+		vertical-align: bottom;
+        border-bottom: 2px black solid;
+        text-decoration: none;
+        font-size:25px;
+        text-align: center;
+		color: white;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	}
     .characterList a {
 		padding-top: 15px;
         height: 50px;
@@ -162,7 +196,9 @@ body {
         .characterPreview .weaponBox .attachments {
             width:25px;
             height:100px;
-            margin:0;
+            margin:0;    
+            height: 100px;
+            width: 400px;
             padding:0;
             top:0px;
             left:50px;
@@ -246,3 +282,8 @@ body {
         margin-left: 100px;
         margin-top: -45px;
     }
+
+#loade {
+  height: 800px;
+  width: 800px;
+}
