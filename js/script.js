@@ -18,3 +18,8 @@ function clearEquipmentMenu()
     }
     currentBoi = "";
 }
+
+function loadCharacter()
+{
+    document.getElementById("loade").innerHTML='<object type="text/html" data="ash.html" ></object>';
+}
