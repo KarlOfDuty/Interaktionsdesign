@@ -3,12 +3,22 @@ var currentBoi = "";
 
 function openEquipmentMenu(id)
 {
-    document.getElementById(id).style.display = "block";
     if (currentBoi != "")
     {
         document.getElementById(currentBoi).style.display = "none";
+        document.getElementById("itemList").style["overflow-y"] = "hidden";
     }
-    currentBoi = id;
+
+    if (currentBoi != id)
+    {
+        document.getElementById(id).style.display = "block";
+        document.getElementById("itemList").style["overflow-y"] = "scroll";
+        currentBoi = id;
+    }
+    else
+    {
+        currentBoi = "";
+    }
 }
 function clearEquipmentMenu()
 {
@@ -16,6 +26,7 @@ function clearEquipmentMenu()
     {
         document.getElementById(currentBoi).style.display = "none";
     }
+    document.getElementById("itemList").style["overflow-y"] = "hidden";
     currentBoi = "";
 }
 
