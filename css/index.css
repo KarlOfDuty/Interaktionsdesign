@@ -285,6 +285,14 @@ html {
     display: none;
 }
 
+#weaponSecList {
+  display: none;
+}
+
+#equipmentList {
+  display: none;
+}
+
 .listItem {
     width: 100%;
     height: 100px;
