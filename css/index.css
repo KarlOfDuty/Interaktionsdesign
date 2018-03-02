@@ -305,10 +305,31 @@ body {
     overflow-y:hidden;
 }
 
+.loreCont{
+    height: 900px;
+    width: 270px;
+    box-sizing: border-box;
+    border-right: 1px dotted black;
+    background-color: #cacaca;
+    float: left;
+}
+
 .bio {
-	padding-top: 20px;
-	font-size:20px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size:17px;
 	box-sizing: border-box;
+	margin: 10px;
+}
+
+.psych{
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size:17px;
+	box-sizing: border-box;
+	margin: 10px;
 }
 
 #weaponList {
