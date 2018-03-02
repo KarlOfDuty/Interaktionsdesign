@@ -68,14 +68,16 @@ html {
         color: #FFFFFF;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-
-.optionsmenu {
-    float: right;
-    position: relative;
-}
+	
+	.optionsmenu{
+        float: right;
+		padding-right: 20px;
+		position: relative;
+	}
 
     .optionsmenu img {
         content: url("../images/gear.png");
+
     }
 
     .optionsmenu:hover img {
@@ -83,7 +85,7 @@ html {
         transition-duration: 1s;
         content: url("../images/gearGrey.png");
     }
-
+	
     .optionsmenu:active {
         content: url("../images/gearGrey.png");
         height: 40px;
@@ -91,6 +93,26 @@ html {
         position: relative;
         float: right;
         margin-top: 7px;
+    }
+	
+		.exit{
+        float: right;
+		padding-right: 20px;
+		position: relative;
+    }
+	.exit img{
+		content: url("../images/exit.png");
+	}
+	.exit:hover img{
+		content: url("../images/exitGrey.png");
+    }
+	.exit:active{
+		content: url("../images/exitGrey.png");
+		height: 40px;
+		width: 40px;
+		position: relative;
+		float: right;
+		margin-top: 7px;
     }
 
 .characterList {
@@ -269,6 +291,32 @@ html {
     border-right: 1px black solid;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.loreCont{
+    height: 900px;
+    width: 270px;
+    border-right: 1px dotted black;
+    background-color: #cacaca;
+	float: left;
+}
+
+.bio {
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size:17px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+
+.psych{
+	float: left;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size:17px;
+	box-sizing: border-box;
+	margin: 10px;
 }
 
 #weaponList {
