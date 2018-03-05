@@ -68,6 +68,12 @@ html {
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
+        .mainmenu:hover span {
+            transition-timing-function: ease-in;
+            transition-duration: 0.2s;
+            border-right: solid white 3px;
+        }
+
 .menuitem {
     font-size: 40px;
     color: #9a9a9a;
@@ -337,7 +343,7 @@ html {
 
 .characterPreview img {
     height: 100%;
-	max-width: 100%;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
