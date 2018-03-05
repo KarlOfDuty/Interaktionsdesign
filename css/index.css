@@ -236,8 +236,6 @@ html {
             width: 25px;
             height: 120px;
             margin: 0;
-            height: 100px;
-            width: 400px;
             padding: 0;
             top: 0px;
             left: 50px;
@@ -273,12 +271,7 @@ html {
         float: left;
     }
 
-#popup a span {
-    display: none;
-}
-
-#popup a:hover span {
-    display: block;
+#bio {
     position: absolute;
     top: 60px;
     float: left;
@@ -289,6 +282,14 @@ html {
     background: #cacaca;
     text-align: center;
     border: 1px solid #666;
+}
+
+#popup #bio {
+    display: none;
+}
+
+#popup:hover #bio {
+    display: block;
 }
 
 .characterPreview img {
@@ -312,23 +313,6 @@ html {
     border-right: 1px black solid;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-
-.loreCont {
-    height: 900px;
-    width: 270px;
-    border-right: 1px dotted black;
-    background-color: #cacaca;
-    float: left;
-}
-
-.bio {
-    float: left;
-    padding-left: 10px;
-    padding-right: 5px;
-    font-size: 17px;
-    box-sizing: border-box;
-    margin: 10px;
 }
 
 .psych {
