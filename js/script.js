@@ -92,6 +92,12 @@ function selectItem(id) {
     else if (id == "416-c_carbine") {
         document.getElementById(currentBox).src = "images/Weapons/416-C_Carbinerot.png";
     }
+	else if (id == "57usg") {
+        document.getElementById(currentBox).src = "images/Weapons/57USGrot.png";
+    }
+	else if (id == "m45-meusoc") {
+		document.getElementById(currentBox).src = "images/Weapons/M45-MEUSOCrot.png";
+    }
     clearEquipmentMenu();
     return;
 }
