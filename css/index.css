@@ -273,12 +273,14 @@ html {
 
 #bio {
     position: absolute;
-    top: 60px;
+	top: 0px;
+	left: 300px;
     float: left;
     width: 300px;
     margin: 0px;
-    color: #335500;
+    color: white;
     font-weight: normal;
+	font-size: 20px;
     background: #cacaca;
     text-align: center;
     border: 1px solid #666;
