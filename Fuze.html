@@ -7,33 +7,43 @@
 <body>
     <div class="container">
         <div id="itemList">
+            <!-- Attachments list -->
             <div id="attachmentsList">
-                <div class="listItem">
-                    <a href="#">
-                        <img src="images/Attachments/acog1.png" alt="attachment1" />
-                    </a>
-                </div>
+                <a href="#">
+                    <div class="listItem">
+                        <img src="images/Attachments/acog1.png" alt="attachment1" onclick="selectItem('acog')" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="listItem">
+                        <img src="images/Attachments/reflex1.png" alt="attachment1" onclick="selectItem('reflex')" />
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="listItem">
+                        <img src="images/Attachments/holo1.png" alt="attachment1" onclick="selectItem('holo')" />
+                    </div>
+                </a>
             </div>
+            <!-- Weapon List -->
             <div id="weaponList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" onclick="selectItem('m4')" />
+                        <img src="images/weapon1rot.png" alt="M4A1" onclick="selectItem('m4')" />
                     </a>
                 </div>
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/akrot.png" alt="Weapon" onclick="selectItem('ak')" />
+                        <img src="images/akrot.png" alt="AK47" onclick="selectItem('ak')" />
                     </a>
-                </div><div class="listItem">
+                </div>
+                <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
-                    </a>
-                </div>                <div class="listItem">
-                    <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                        <img src="images/shotgunrot.png" alt="Shotgun" onclick="selectItem('shotgun')" />
                     </a>
                 </div>
             </div>
+            <!-- Secondary Weapon list -->
             <div id="weaponSecList">
                 <div class="listItem">
                     <a href="#">
@@ -41,6 +51,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Equipmant List -->
             <div id="equipmentList">
                 <div class="listItem">
                     <a href="#">
@@ -48,6 +59,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Armor List -->
             <div id="armorList">
                 <div class="listItem">
                     <a href="#">
@@ -55,6 +67,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Helmet List -->
             <div id="helmetList">
                 <div class="listItem">
                     <a href="#">
@@ -98,15 +111,17 @@
                     </a>
                 </div>
             </div>
-				<div class="characterModel" id="popup">
-					<a href="#"><img src="images/Characters/fuze.png" alt="Character" />
-						<span><h3>Background</h3>
-						Kessikbayev grew up in a military family in Samarkand, Uzbekistan. After his family emigrated to Russia shortly before the collapse of the Soviet Union, Kessikbayev followed in his father's footsteps and enrolled in the military, where his facility with technology landed him a spot in the coveted weapon testing brigade at Alabino firing range near Moscow.
-						<p><h3>Phychological Profile</h3></p>
-						<p>Kessikbayev is an expert tinkerer and a master craftsman, more at ease with the workings of machines than those of people. His gruff demeanor and curt speech should not be mistaken for misanthropy. He possesses a strong moral conviction.</p>
-						</span>
-					</a>
-
+            <div class="characterModel" id="popup">
+                <a href="#">
+                    <img src="images/Characters/fuze.png" alt="Character" />
+                    <span>
+                        <h3>Background</h3>
+                        Kessikbayev grew up in a military family in Samarkand, Uzbekistan. After his family emigrated to Russia shortly before the collapse of the Soviet Union, Kessikbayev followed in his father's footsteps and enrolled in the military, where his facility with technology landed him a spot in the coveted weapon testing brigade at Alabino firing range near Moscow.
+                        <p><h3>Phychological Profile</h3></p>
+                        <p>Kessikbayev is an expert tinkerer and a master craftsman, more at ease with the workings of machines than those of people. His gruff demeanor and curt speech should not be mistaken for misanthropy. He possesses a strong moral conviction.</p>
+                    </span>
+                </a>
+            </div>
             <div style="float:left;">
                 <div class="equipmentBox" onclick="openEquipmentMenu('helmetList','equipment3')">
                     <a href="#">

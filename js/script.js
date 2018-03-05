@@ -48,6 +48,18 @@ function selectItem(id) {
     else if (id == "ak") {
         document.getElementById(currentBox).src = "images/ak.png";
     }
+    else if (id == "shotgun") {
+        document.getElementById(currentBox).src = "images/shotgun.png";
+    }
+    else if (id == "acog") {
+        document.getElementById(currentBox).src = "images/Attachments/acog1.png";
+    }
+    else if (id == "reflex") {
+        document.getElementById(currentBox).src = "images/Attachments/reflex1.png";
+    }
+    else if (id == "holo") {
+        document.getElementById(currentBox).src = "images/Attachments/holo1.png";
+    }
     clearEquipmentMenu();
     return;
 }

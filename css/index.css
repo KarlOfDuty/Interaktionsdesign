@@ -234,7 +234,7 @@ html {
 
         .characterPreview .weaponBox .attachments {
             width: 25px;
-            height: 100px;
+            height: 120px;
             margin: 0;
             height: 100px;
             width: 400px;
@@ -245,12 +245,13 @@ html {
         }
 
             .characterPreview .weaponBox .attachments .attachmentBox {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 border: solid 3px black;
-                box-sizing: border-box;
+                box-sizing: content-box;
                 background-color: #cacaca;
                 margin-top: 5px;
+                overflow: hidden;
                 z-index: 50;
             }
 
