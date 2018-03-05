@@ -7,58 +7,86 @@
 <body>
     <div class="container">
         <div id="itemList">
+            <!-- Attachments list -->
             <div id="attachmentsList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/Attachments/acog1.png" alt="attachment1" />
+                        <img src="images/Attachments/acog1.png" alt="attachment1" onclick="selectItem('acog1')" />
+                    </a>
+                </div>
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/Attachments/acog2.png" alt="attachment1" onclick="selectItem('acog2')" />
+                    </a>
+                </div>
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/Attachments/acog3.png" alt="attachment1" onclick="selectItem('acog3')" />
+                    </a>
+                </div>
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/Attachments/holo1.png" alt="attachment1" onclick="selectItem('holo1')" />
                     </a>
                 </div>
             </div>
+            <!-- Weapon List -->
             <div id="weaponList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                        <img src="images/weapon1rot.png" alt="M4A1" onclick="selectItem('m4')" />
                     </a>
                 </div>
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/akrot.png" alt="Weapon" />
+                        <img src="images/akrot.png" alt="AK47" onclick="selectItem('ak')" />
                     </a>
-                </div><div class="listItem">
+                </div>
+                <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                        <img src="images/shotgunrot.png" alt="Shotgun" onclick="selectItem('shotgun')" />
                     </a>
-                </div>                <div class="listItem">
+                </div>
+                <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                        <img src="images/Weapons/P90.png" alt="Weapon" onclick="selectItem('p90')" />
+                    </a>
+                </div>
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/Weapons/MP5.png" alt="Weapon" onclick="selectItem('mp5')" />
                     </a>
                 </div>
             </div>
+            <!-- Secondary Weapon list -->
             <div id="weaponSecList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="WeaponSec" />
+                        <img src="images/Weapons/MP5.png" alt="Weapon" onclick="selectItem('mp5')" />
                     </a>
                 </div>
             </div>
+            <!-- Equipment list -->
             <div id="equipmentList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="equipment" />
+                        <img src="images/Gadgets/hegrenade.png" alt="Weapon" onclick="selectItem('hegrenade')" />
                     </a>
                 </div>
             </div>
-            <div id="amortList">
+            <!-- Armor lsit -->
+            <div id="armorList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="amor" />
+                        <img src="images/armor.png" alt="amor" onclick="selectItem('armor')" />
                     </a>
                 </div>
             </div>
-            <div id="hatList">
+            <!-- Helmet list -->
+            <div id="helmetList">
                 <div class="listItem">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="hat"/>
+                        <img src="images/hat.png" alt="hat" onclick="selectItem('hat')" />
                     </a>
                 </div>
             </div>
@@ -67,40 +95,64 @@
             <div style="float:left;">
                 <div class="weaponBox">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList')" />
+                        <img src="images/weapon1.png" alt="Weapon" id="weaponBox" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
                     </a>
                     <div class="attachments">
                         <a href="#">
-                            <div id="attachmentBox1" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment1')">
+                                <img src="hello.png" id="attachment1" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox2" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment2')">
+                                <img src="hello.png" id="attachment2" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox3" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment3')">
+                                <img src="hello.png" id="attachment3" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox4" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment4')">
+                                <img src="hello.png" id="attachment4" />
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('weaponSecList','equipment1')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment1" />
+                    </a>
+                </div>
             </div>
-				<div class="characterModel" id="popup">
-					<a href="#"><img src="images/Characters/fuze.png" alt="Character" />
-						<span><h3>Background</h3>
-						Kessikbayev grew up in a military family in Samarkand, Uzbekistan. After his family emigrated to Russia shortly before the collapse of the Soviet Union, Kessikbayev followed in his father's footsteps and enrolled in the military, where his facility with technology landed him a spot in the coveted weapon testing brigade at Alabino firing range near Moscow.
-						<p><h3>Phychological Profile</h3></p>
-						<p>Kessikbayev is an expert tinkerer and a master craftsman, more at ease with the workings of machines than those of people. His gruff demeanor and curt speech should not be mistaken for misanthropy. He possesses a strong moral conviction.</p>
-						</span>
-					</a>
-				</div>
+            <div class="characterModel" id="popup">
+                <a href="#">
+                    <img src="images/Characters/fuze.png" alt="Character" />
+                    <span>
+                        <h3>Background</h3>
+                        Kessikbayev grew up in a military family in Samarkand, Uzbekistan. After his family emigrated to Russia shortly before the collapse of the Soviet Union, Kessikbayev followed in his father's footsteps and enrolled in the military, where his facility with technology landed him a spot in the coveted weapon testing brigade at Alabino firing range near Moscow.
+                        <p><h3>Phychological Profile</h3></p>
+                        <p>Kessikbayev is an expert tinkerer and a master craftsman, more at ease with the workings of machines than those of people. His gruff demeanor and curt speech should not be mistaken for misanthropy. He possesses a strong moral conviction.</p>
+                    </span>
+                </a>
+            </div>
             <div style="float:left;">
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('helmetList','equipment3')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment3" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('armorList','equipment4')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment4" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('equipmentList','equipment3')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment3" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
