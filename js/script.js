@@ -25,6 +25,7 @@ function clearEquipmentMenu() {
     }
     document.getElementById("itemList").style["overflow-y"] = "hidden";
     currentList = "";
+    currentBox = "";
 }
 
 function loadCharacter(id) {
@@ -74,6 +75,9 @@ function selectItem(id) {
     }
     else if (id == "g36c") {
         document.getElementById(currentBox).src = "images/Weapons/G36Crot.png";
+    }
+    else if (id == "shotgun") {
+        document.getElementById(currentBox).src = "images/shotgun.png";
     }
     clearEquipmentMenu();
     return;
