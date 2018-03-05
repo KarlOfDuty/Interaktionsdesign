@@ -48,11 +48,11 @@ function selectItem(id) {
     else if (id == "mp5") {
         document.getElementById(currentBox).src = "images/Weapons/MP5rot.png";
     }
-    else if (id == "m4") {
-        document.getElementById(currentBox).src = "images/weapon1.png";
+    else if (id == "r4-c") {
+        document.getElementById(currentBox).src = "images/Weapons/R4-Crot.png";
     }
-    else if (id == "ak") {
-        document.getElementById(currentBox).src = "images/ak.png";
+    else if (id == "g36c") {
+        document.getElementById(currentBox).src = "images/Weapons/G36Crot.png";
     }
     clearEquipmentMenu();
     return;
