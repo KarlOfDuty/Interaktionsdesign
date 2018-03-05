@@ -42,11 +42,11 @@ function loadCharacter(id) {
 function selectItem(id) {
     if (currentBox == "") {
     }
-    else if (id == "m4") {
-        document.getElementById(currentBox).src = "images/weapon1.png";
+    else if (id == "G36C") {
+        document.getElementById(currentBox).src = "images/Weapons/G36C.png";
     }
-    else if (id == "ak") {
-        document.getElementById(currentBox).src = "images/ak.png";
+    else if (id == "R4-C") {
+        document.getElementById(currentBox).src = "images/Weapons/R4-C.png";
     }
     clearEquipmentMenu();
     return;
