@@ -1,37 +1,53 @@
 // JavaScript source code
-var currentBoi = "";
+var currentList = "";
+var currentBox = "";
 
-function openEquipmentMenu(id) {
-    if (currentBoi != "") {
-        document.getElementById(currentBoi).style.display = "none";
+function openEquipmentMenu(list, id) {
+    if (currentList != "") {
+        document.getElementById(currentList).style.display = "none";
         document.getElementById("itemList").style["overflow-y"] = "hidden";
     }
 
-    if (currentBoi != id) {
-        document.getElementById(id).style.display = "block";
+    if (currentBox != id) {
+        document.getElementById(list).style.display = "block";
         document.getElementById("itemList").style["overflow-y"] = "auto";
-        currentBoi = id;
+        currentList = list;
+        currentBox = id;
     }
     else {
-        currentBoi = "";
+        currentList = "";
+        currentBox = "";
     }
 }
 function clearEquipmentMenu() {
-    if (currentBoi != "") {
-        document.getElementById(currentBoi).style.display = "none";
+    if (currentList != "") {
+        document.getElementById(currentList).style.display = "none";
     }
     document.getElementById("itemList").style["overflow-y"] = "hidden";
-    currentBoi = "";
+    currentList = "";
 }
 
 function loadCharacter(id) {
     if (id == "ash") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="ash.html" ></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="ash.html" ></object>';
     } else if (id == "fuze") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Fuze.html" ></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Fuze.html"></object>';
     } else if (id == "rook") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Rook.html" ></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Rook.html"></object>';
     } else if (id == "jeger") {
-        document.getElementById("loade").innerHTML = '<object type="text/html" data="Jeger.html" ></object>';
+        document.getElementById("loader").innerHTML = '<object type="text/html" data="Jeger.html"></object>';
     }
+}
+
+function selectItem(id) {
+    if (currentBox == "") {
+    }
+    else if (id == "m4") {
+        document.getElementById(currentBox).src = "images/weapon1.png";
+    }
+    else if (id == "ak") {
+        document.getElementById(currentBox).src = "images/ak.png";
+    }
+    clearEquipmentMenu();
+    return;
 }
