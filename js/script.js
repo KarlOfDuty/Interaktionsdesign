@@ -42,6 +42,21 @@ function loadCharacter(id) {
 function selectItem(id) {
     if (currentBox == "") {
     }
+    else if (id == "acog1") {
+        document.getElementById(currentBox).src = "images/Attachments/acog1.png";
+    }
+    else if (id == "acog2") {
+        document.getElementById(currentBox).src = "images/Attachments/acog2.png";
+    }
+    else if (id == "acog3") {
+        document.getElementById(currentBox).src = "images/Attachments/acog3.png";
+    }
+    else if (id == "holo1") {
+        document.getElementById(currentBox).src = "images/Attachments/holo1.png";
+    }
+    else if (id == "hegrenade") {
+        document.getElementById(currentBox).src = "images/Gadgets/hegrenade.png";
+    }
     else if (id == "p90") {
         document.getElementById(currentBox).src = "images/Weapons/P90rot.png";
     }
