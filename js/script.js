@@ -42,6 +42,12 @@ function loadCharacter(id) {
 function selectItem(id) {
     if (currentBox == "") {
     }
+    else if (id == "p90") {
+        document.getElementById(currentBox).src = "images/Weapons/P90rot.png";
+    }
+    else if (id == "mp5") {
+        document.getElementById(currentBox).src = "images/Weapons/MP5rot.png";
+    }
     else if (id == "m4") {
         document.getElementById(currentBox).src = "images/weapon1.png";
     }
