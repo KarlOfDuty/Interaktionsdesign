@@ -92,6 +92,21 @@ function selectItem(id) {
     else if (id == "416-c_carbine") {
         document.getElementById(currentBox).src = "images/Weapons/416-C_Carbinerot.png";
     }
+	else if (id == "57usg") {
+        document.getElementById(currentBox).src = "images/Weapons/57USGrot.png";
+    }
+	else if (id == "m45-meusoc") {
+		document.getElementById(currentBox).src = "images/Weapons/M45-MEUSOCrot.png";
+    }
+	else if (id == "ak-12") {
+		document.getElementById(currentBox).src = "images/Weapons/AK-12rot.png";
+    }
+	else if (id == "6p41") {
+		document.getElementById(currentBox).src = "images/Weapons/6P41rot.png";
+    }
+	else if (id == "shield") {
+		document.getElementById(currentBox).src = "images/Weapons/Ballistic_shield.png";
+    }
     clearEquipmentMenu();
     return;
 }
