@@ -1,34 +1,133 @@
-<div class="characterPreview">
-    <div style="float:left;">
-        <div class="weaponBox">
-            <a href="#">
-                <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList')" />
-            </a>
-            <div class="attachments">
-                <a href="#">
-                    <div id="attachmentBox1" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
-                </a>
-                <a href="#">
-                    <div id="attachmentBox2" class="attachmentBox"></div>
-                </a>
-                <a href="#">
-                    <div id="attachmentBox3" class="attachmentBox"></div>
-                </a>
-                <a href="#">
-                    <div id="attachmentBox4" class="attachmentBox"></div>
-                </a>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="itemList">
+            <div id="attachmentsList">
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/Attachments/acog1.png" alt="attachment1" />
+                    </a>
+                </div>
+            </div>
+            <div id="weaponList">
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/weapon1rot.png" alt="Weapon" onclick="selectItem('m4')" />
+                    </a>
+                </div>
+                <div class="listItem">
+                    <a href="#">
+                        <img src="images/akrot.png" alt="Weapon" onclick="selectItem('ak')" />
+                    </a>
+                </div><div class="listItem">
+                    <a href="#">
+                        <img src="images/weapon1rot.png" alt="Weapon" />
+                    </a>
+                </div>                <div class="listItem">
+                    <a href="#">
+                        <img src="images/weapon1rot.png" alt="Weapon" />
+                    </a>
+                </div>
+            </div>
+            <div id="weaponSecList">
+                <div class="listItem">
+                    <a href="http://google.com">
+                        <img src="images/weapon1.png" alt="WeaponSec" />
+                    </a>
+                </div>
+            </div>
+            <div id="equipmentList">
+                <div class="listItem">
+                    <a href="http://google.com">
+                        <img src="images/weapon1.png" alt="equipment" />
+                    </a>
+                </div>
+            </div>
+            <div id="amortList">
+                <div class="listItem">
+                    <a href="http://google.com">
+                        <img src="images/weapon1.png" alt="amor" />
+                    </a>
+                </div>
+            </div>
+            <div id="hatList">
+                <div class="listItem">
+                    <a href="http://google.com">
+                        <img src="images/weapon1.png" alt="hat" />
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="equipmentBox"><a href="#"></a></div>
-        <div class="equipmentBox"><a href="#"></a></div>
+        <div class="characterPreview">
+            <div style="float:left;">
+                <div class="weaponBox">
+                    <a href="#">
+                        <img src="images/weapon1.png" alt="Weapon" id="weaponBox" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
+                    </a>
+                    <div class="attachments">
+                        <a href="#">
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment1')">
+                                <img src="hello.png" id="attachment1" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment2')">
+                                <img src="hello.png" id="attachment2" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment3')">
+                                <img src="hello.png" id="attachment3" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment4')">
+                                <img src="hello.png" id="attachment4" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('weaponSecList','equipment1')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment1" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('equipmentList','equipment2')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment2" />
+                    </a>
+                </div>
+            </div>
+			
+				<div class="characterModel" id="popup">
+					<a href="#"><img src="images/characterModel.png" alt="Character" />
+						<span><h3>Background</h3>
+						Born and raised in Jerusalem, Israel, Cohen enrolled at Tel Aviv University after secondary school in the Engineering program. It was during this time she did a semester abroad at Boston University. After college, she enlisted in the Israeli Defense Forces. Her engineering background made her a great candidate for mechanical maintenance and demolitions.
+						<p>She was later transferred to FBI SWAT due to an international law enforcement exchange program. Cohen brought her knowledge of demolitions with her in producing a weapon-mounted breach charge capable of blowing open a door or wall from a distance.</p>
+						<p><h3>Phychological Profile</h3></p>
+						<p>Her military training as a demolitions specialist has left Cohen with an inflated sense of self. She can be aggressive, impulsive, and overly confident. She is quick to action, which can be an asset or fatal for someone in her line of work.</p>
+						</span>
+					</a>
+				</div>
+				
+            <div style="float:left;">
+                <div class="equipmentBox" onclick="openEquipmentMenu('weaponList','equipment3')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment3" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('equipmentList','equipment4')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment4" />
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="characterModel">
-        <a href="#"><img src="images/characterModel.png" alt="Character" /></a>
-    </div>
-    <div style="float:left;">
-        <div class="equipmentBox"><a href="#"></a></div>
-        <div class="equipmentBox"><a href="#"></a></div>
-        <div class="equipmentBox"><a href="#"></a></div>
-        <div class="equipmentBox"><a href="#"></a></div>
-    </div>
-</div>
+</body>
+</html>
