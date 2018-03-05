@@ -44,6 +44,11 @@ function selectItem(id) {
     }
     else if (id == "G36C") {
         document.getElementById(currentBox).src = "images/Weapons/G36C.png";
+    else if (id == "p90") {
+        document.getElementById(currentBox).src = "images/Weapons/P90rot.png";
+    }
+    else if (id == "mp5") {
+        document.getElementById(currentBox).src = "images/Weapons/MP5rot.png";
     }
     else if (id == "R4-C") {
         document.getElementById(currentBox).src = "images/Weapons/R4-C.png";
