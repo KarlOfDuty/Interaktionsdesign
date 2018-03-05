@@ -72,7 +72,6 @@ html {
 .optionsmenu {
     float: right;
     padding-right: 20px;
-    position: relative;
 }
 
     .optionsmenu img {
@@ -89,7 +88,6 @@ html {
         content: url("../images/gearGrey.png");
         height: 40px;
         width: 40px;
-        position: relative;
         float: right;
         margin-top: 7px;
     }
@@ -97,7 +95,6 @@ html {
 .exit {
     float: right;
     padding-right: 20px;
-    position: relative;
 }
 
     .exit img {
@@ -112,7 +109,6 @@ html {
         content: url("../images/exitGrey.png");
         height: 40px;
         width: 40px;
-        position: relative;
         float: right;
         margin-top: 7px;
     }
@@ -123,7 +119,6 @@ html {
     box-sizing: border-box;
     border-right: 1px solid black;
     background-color: #cacaca;
-    position: relative;
     float: left;
 }
 
@@ -271,26 +266,49 @@ html {
         float: left;
     }
 
-#bio {
+.bio {
     position: absolute;
-	top: 0px;
-	left: 300px;
-    float: left;
-    width: 300px;
+    width: 400px;
     margin: 0px;
-    color: white;
+    padding: 5px;
+    color: black;
     font-weight: normal;
-	font-size: 20px;
+    font-size: 15px;
     background: #cacaca;
-    text-align: center;
+    text-align: left;
     border: 1px solid #666;
+    text-shadow: none;
 }
 
-#popup #bio {
+#ash .bio {
     display: none;
 }
 
-#popup:hover #bio {
+#ash:hover .bio {
+    display: block;
+}
+
+#fuze .bio {
+    display: none;
+}
+
+#fuze:hover .bio {
+    display: block;
+}
+
+#rook .bio {
+    display: none;
+}
+
+#rook:hover .bio {
+    display: block;
+}
+
+#jager .bio {
+    display: none;
+}
+
+#jager:hover .bio {
     display: block;
 }
 

@@ -19,9 +19,9 @@ function openEquipmentMenu(list, id) {
         currentBox = "";
     }
 }
-function moveBio() {
-    document.getElementById("bio").style.top = event.clientY + "px";
-    document.getElementById("bio").style.left = event.clientX + "px";
+function moveBio(id) {
+    document.getElementById(id).style.top = (event.clientY + 20) + "px";
+    document.getElementById(id).style.left = (event.clientX + 10) + "px";
 }
 function clearEquipmentMenu() {
     if (currentList != "") {
