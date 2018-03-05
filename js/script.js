@@ -53,6 +53,9 @@ function selectItem(id) {
     else if (id == "hat") {
         document.getElementById(currentBox).src = "images/hat.png";
     }
+	    else if (id == "nothing") {
+        document.getElementById(currentBox).src = "hello.png";
+    }
     else if (id == "acog1") {
         document.getElementById(currentBox).src = "images/Attachments/acog1.png";
     }
@@ -80,8 +83,8 @@ function selectItem(id) {
     else if (id == "g36c") {
         document.getElementById(currentBox).src = "images/Weapons/G36Crot.png";
     }
-    else if (id == "sq-cgb") {
-        document.getElementById(currentBox).src = "images/Weapons/SG-CGBrot.png";
+    else if (id == "sg-cqb") {
+        document.getElementById(currentBox).src = "images/Weapons/SG-CQBrot.png";
     }
     else if (id == "m870") {
         document.getElementById(currentBox).src = "images/Weapons/M870rot.png";
