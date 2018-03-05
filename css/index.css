@@ -376,20 +376,21 @@ html {
     background-color: #a7a7a7;
 }
 
-    .listItem a {
-        height: 100%;
-        display: block;
-        list-style-type: none;
-        text-decoration: none;
-        font-size: 25px;
-        color: #808080;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-
     .listItem img {
+        max-width: 350px;
         height: 100%;
         float: left;
         display: block;
+    }
+
+    .listItem .description {
+        width: 300px;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        display: block;
+        float: right;
+        text-shadow: none;
     }
 
 #loader {
