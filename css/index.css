@@ -217,14 +217,15 @@ html {
 }
 
     .characterPreview .weaponBox {
-        width: 100px;
-        height: 230px;
+        width: 80px;
+        height: 210px;
         border: double 10px black;
-        box-sizing: border-box;
+        box-sizing: content-box;
         background-color: #cacaca;
         margin-top: 30px;
         padding: 0;
         position: relative;
+        overflow: hidden;
     }
 
         .characterPreview .weaponBox .attachments {
