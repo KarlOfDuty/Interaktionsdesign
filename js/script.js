@@ -19,6 +19,10 @@ function openEquipmentMenu(list, id) {
         currentBox = "";
     }
 }
+function moveBio(id) {
+    document.getElementById(id).style.top = (event.clientY + 20) + "px";
+    document.getElementById(id).style.left = (event.clientX + 10) + "px";
+}
 function clearEquipmentMenu() {
     if (currentList != "") {
         document.getElementById(currentList).style.display = "none";
@@ -82,7 +86,7 @@ function selectItem(id) {
     else if (id == "sg-cqb") {
         document.getElementById(currentBox).src = "images/Weapons/SG-CQBrot.png";
     }
-	 else if (id == "m870") {
+    else if (id == "m870") {
         document.getElementById(currentBox).src = "images/Weapons/M870rot.png";
     }
     else if (id == "416-c_carbine") {
