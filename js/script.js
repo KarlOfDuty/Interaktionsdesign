@@ -42,6 +42,12 @@ function loadCharacter(id) {
 function selectItem(id) {
     if (currentBox == "") {
     }
+    else if (id == "armor") {
+        document.getElementById(currentBox).src = "images/armor.png";
+    }
+    else if (id == "hat") {
+        document.getElementById(currentBox).src = "images/hat.png";
+    }
     else if (id == "acog1") {
         document.getElementById(currentBox).src = "images/Attachments/acog1.png";
     }
