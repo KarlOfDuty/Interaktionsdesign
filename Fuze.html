@@ -9,56 +9,56 @@
         <div id="itemList">
             <div id="attachmentsList">
                 <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/Attachments/acog1.png" alt="attachment1" />
                     </a>
                 </div>
             </div>
             <div id="weaponList">
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/weapon1rot.png" alt="Weapon" />
+                    <a href="#">
+                        <img src="images/weapon1rot.png" alt="Weapon" onclick="selectItem('m4')" />
                     </a>
                 </div>
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/akrot.png" alt="Weapon" />
+                    <a href="#">
+                        <img src="images/akrot.png" alt="Weapon" onclick="selectItem('ak')" />
                     </a>
                 </div><div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1rot.png" alt="Weapon" />
                     </a>
                 </div>                <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1rot.png" alt="Weapon" />
                     </a>
                 </div>
             </div>
             <div id="weaponSecList">
                 <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1.png" alt="WeaponSec" />
                     </a>
                 </div>
             </div>
             <div id="equipmentList">
                 <div class="listItem">
-                    <a href="http://google.com">
+                    <a href="#">
                         <img src="images/weapon1.png" alt="equipment" />
                     </a>
                 </div>
             </div>
-            <div id="amortList">
+            <div id="armorList">
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/weapon1.png" alt="amor" />
+                    <a href="#">
+                        <img src="images/weapon1.png" alt="armor" />
                     </a>
                 </div>
             </div>
-            <div id="hatList">
+            <div id="helmetList">
                 <div class="listItem">
-                    <a href="http://google.com">
-                        <img src="images/weapon1.png" alt="hat"/>
+                    <a href="#">
+                        <img src="images/weapon1.png" alt="helmet" />
                     </a>
                 </div>
             </div>
@@ -67,25 +67,36 @@
             <div style="float:left;">
                 <div class="weaponBox">
                     <a href="#">
-                        <img src="images/weapon1.png" alt="Weapon" onclick="openEquipmentMenu('weaponList')" />
+                        <img src="images/weapon1.png" alt="Weapon" id="weaponBox" onclick="openEquipmentMenu('weaponList', 'weaponBox')" />
                     </a>
                     <div class="attachments">
                         <a href="#">
-                            <div id="attachmentBox1" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment1')">
+                                <img src="hello.png" id="attachment1" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox2" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment2')">
+                                <img src="hello.png" id="attachment2" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox3" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment3')">
+                                <img src="hello.png" id="attachment3" />
+                            </div>
                         </a>
                         <a href="#">
-                            <div id="attachmentBox4" class="attachmentBox" onclick="openEquipmentMenu('attachmentsList')"></div>
+                            <div class="attachmentBox" onclick="openEquipmentMenu('attachmentsList', 'attachment4')">
+                                <img src="hello.png" id="attachment4" />
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('weaponSecList','equipment1')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment1" />
+                    </a>
+                </div>
             </div>
 				<div class="characterModel" id="popup">
 					<a href="#"><img src="images/Characters/fuze.png" alt="Character" />
@@ -95,12 +106,23 @@
 						<p>Kessikbayev is an expert tinkerer and a master craftsman, more at ease with the workings of machines than those of people. His gruff demeanor and curt speech should not be mistaken for misanthropy. He possesses a strong moral conviction.</p>
 						</span>
 					</a>
-				</div>
+
             <div style="float:left;">
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
-                <div class="equipmentBox"><a href="#"></a></div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('helmetList','equipment3')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment3" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('armorList','equipment4')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment4" />
+                    </a>
+                </div>
+                <div class="equipmentBox" onclick="openEquipmentMenu('equipmentList','equipment3')">
+                    <a href="#">
+                        <img src="hello.png" id="equipment3" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
