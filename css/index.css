@@ -231,6 +231,13 @@ html {
         padding: 0;
         position: relative;
     }
+	
+	.weaponBox img{
+		width: 190px;
+		transform-origin: top left;
+		transform: rotate(270deg);
+		margin-top: 200px;
+	}
 
         .characterPreview .weaponBox .attachments {
             width: 25px;
