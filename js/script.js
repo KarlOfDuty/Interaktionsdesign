@@ -76,8 +76,14 @@ function selectItem(id) {
     else if (id == "g36c") {
         document.getElementById(currentBox).src = "images/Weapons/G36Crot.png";
     }
-    else if (id == "shotgun") {
-        document.getElementById(currentBox).src = "images/shotgun.png";
+    else if (id == "sq-cgb") {
+        document.getElementById(currentBox).src = "images/Weapons/SG-CGBrot.png";
+    }
+	 else if (id == "m870") {
+        document.getElementById(currentBox).src = "images/Weapons/M870rot.png";
+    }
+    else if (id == "416-c_carbine") {
+        document.getElementById(currentBox).src = "images/Weapons/416-C_Carbinerot.png";
     }
     clearEquipmentMenu();
     return;
